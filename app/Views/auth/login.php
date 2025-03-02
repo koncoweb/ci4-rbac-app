@@ -1,7 +1,7 @@
 <?= $this->extend('layouts/auth') ?>
 
 <?= $this->section('content') ?>
-    <img class="mb-4 auth-logo" src="<?= base_url('assets/img/logo.png') ?>" alt="Logo" onerror="this.src='https://via.placeholder.com/100x100?text=CI4'">
+    <!-- Removed the problematic image with infinite loading fallback -->
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
     
     <?= form_open('auth/attemptLogin') ?>

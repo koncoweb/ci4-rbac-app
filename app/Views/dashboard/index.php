@@ -135,7 +135,7 @@
                             <?php foreach ($recentActivities as $activity): ?>
                                 <tr>
                                     <td><?= esc($activity['username'] ?? 'System') ?></td>
-                                    <td><?= esc($activity['activity_type']) ?></td>
+                                    <td><?= esc($activity['activity_type'] ?? $activity['action'] ?? 'Unknown') ?></td>
                                     <td><?= esc($activity['details']) ?></td>
                                     <td><?= date('M d, Y H:i', strtotime($activity['created_at'])) ?></td>
                                 </tr>
